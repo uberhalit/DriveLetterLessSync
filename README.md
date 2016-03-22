@@ -26,23 +26,23 @@ Examples:
 #!
 DLLSCLI D:\ \\?\Volume{1b3b1146-4076-11e1-84aa-806e6f6e6963}\ -NL
 ```
-![dlls.png]
+![dlls2.png](https://bitbucket.org/repo/dz9z84/images/3209966234-dlls2.png)
 
 ## Finding volume ID ##
 You can pass `-D` to get a list of all hard drives including their ID and mountpoint.
 Alternatively call `mountvol` via commandline for the same result.
 
-![-D.png]
-![mountvol.png]
+![-D.png](https://bitbucket.org/repo/dz9z84/images/1636112539--D.png)
+![mountvol.png](https://bitbucket.org/repo/dz9z84/images/1588156478-mountvol.png)
 
 These IDs can be used to open an explorer window, independent from the drive letter:
 
-![run.png]
+![run.png](https://bitbucket.org/repo/dz9z84/images/3305541924-run.png)
 
 ## Schedule DLLS to run automatically ##
 Use Windows Task Scheduler and create a Basic Task. Enter a name and a description, "When I log on" as Trigger, "Start a program" as Action. Select DLLScli.exe and add your drives as arguments´. Save your Task. DLLS will sync automatically after logging on now.
 
-![scheduler.png]
+![scheduler.png](https://bitbucket.org/repo/dz9z84/images/2475024304-scheduler.png)
 
 ## Limitations ##
 * empty folders on source drive will not be synchronized
